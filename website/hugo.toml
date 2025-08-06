@@ -78,7 +78,7 @@ noClasses = false
 
 # Comment out if you don't want the "print entire section" link enabled.
 [outputs]
-home = ["HTML", "RSS", "netlify_redirect"]
+home = ["HTML", "RSS", "netlify_redirect", "markdown"]
 section = ["HTML", "RSS"]
 
 [mediaTypes.'text/prs.netlify']
@@ -90,6 +90,13 @@ baseName = "_redirects"
 isPlainText = true
 mediaType = "text/prs.netlify"
 notAlternative = true
+
+[outputFormats.markdown]
+name = "markdown"
+mediaType = "text/plain"
+isPlainText = true
+isHTML = false
+suffix = "md"
 
 [params]
 copyright = "Sidero Labs, Inc."
